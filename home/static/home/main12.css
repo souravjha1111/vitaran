@@ -1,0 +1,170 @@
+p{width: 50%;
+   
+    }
+    body{
+        background-color: rgb(134, 134, 134);
+        margin: 0;
+        color: whitesmoke;
+        font-family: 'Roboto Slab', serif;
+        line-height: 2;
+    }
+    main{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        line-height: 2;
+    }
+    .pagecontent{
+        text-align: center;
+    }
+    .pagecontent p{
+        width: 50%;
+        margin:50px auto;
+    }
+    .pagecontent h2,h3{
+        margin:50px auto;
+    }
+    
+    
+    
+    
+    .loginbutton input{
+        float: right;
+        margin:10px;
+        height:40px;
+        font-size:14pt;
+    }
+    .loginbutton{
+       
+        border: none;
+        color:#696969 ;
+        
+        
+        font-size: 16px;
+     
+        cursor: pointer;
+    }
+    .banner h3,h4{
+        margin:0;
+    }
+    .clearfix
+    {
+        clear: both;
+    }
+    .navelement{
+        display: inline-block;
+        position: relative;
+        left:5px;
+    
+    }
+    .options  ul{
+        list-style: none;
+        font-size: 19px;
+        float:left;
+        margin-left: 0px;
+        
+        padding: 0px ;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .options  ul li{
+        display: inline-block;
+    }
+    .options  ul li a{
+        text-decoration: none;
+        display: block;
+        padding:20px;
+        color: white;
+        
+    }
+    .options  ul li a:hover{
+        
+        color:gray;
+    }
+    .topcontainer{
+        background-color:  black;
+        height: 30%;
+        width: 100%;
+    }
+    .banner {
+        
+        margin-left: 600px;
+        margin-right: 600px;
+        margin-top: 00px;
+        width: 600px;
+    
+    }
+    .pagetitle h1{
+        font-size: 128px;
+        margin-top: 0px;
+        margin-left: 490px;
+        margin-bottom: 0px;
+    }
+    
+    .srcdpl input{
+        height:40px;
+        font-size:14pt;
+    }
+    .srcdpl{
+        padding: 20px;
+        margin-left: 280px;
+    }
+    .details a{
+        text-decoration: none;
+        display: block;
+        padding:20px;
+        text-align:center;
+        font-size: 25px;
+        color: black;
+    }
+    .ftrmenu{
+        
+      background-color:black;
+      height: 300px;
+      width: 100%;
+      padding: 50px;
+      text-align: center;
+      color: azure;
+      font-size: 20px;
+    }
+    .ftrmenu ul li{
+      
+        list-style: none;
+        font-size: 20px;
+    }
+    .ftrmenu address{
+        margin-left: 625px;
+        margin-right:480px ;
+        font-size: 20px;
+    }
+    .ftrmenu a{
+        color: azure;
+        font-size: 25px;
+       
+    }
+    .ftrmenu a:hover{
+        color:gray;
+        text-decoration: none;
+    }
+    .abc{
+        text-decoration: none;
+        color: azure;
+        font-size: 18px;
+    }
+    .abc:hover{
+        text-decoration: none;
+        color:gray;
+    }
+    .navbar{
+        border:none;
+        padding: 0px;
+    }
+    #head {
+        font-size: 200px;
+       margin-left:320px;
+       margin-top: 80px;
+       margin-right: 350px;
+    }
+     #head:hover{
+    text-shadow: 10 20 10  gray;
+    }

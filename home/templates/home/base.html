@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaran</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/main12.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+        <header class="topcontainer">
+               <div class="sticky-top">
+                <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                    <a class="abc" href="post_order">ABOUT</a>
+                    <br>
+                    <br>
+                    <a class="abc" href="home-contact">CONTACT</a>
+                    <br>
+                    <br>
+                    <a class="abc" href="#">SERVICES</a>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                    
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                      
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="loginbutton"> 
+                    <!--login/signup-->
+                    {% if user.is_authenticated %}
+                    <div class="navbar-nav">
+                      <a class="abc ac" href="{% url 'payment' %}">payments</a>
+                           
+                          <a class="abc ac"  href="{% url 'post_order' %}">Post Delivery Order</a>
+                          <a class="abc ac" href="{% url 'profile' %}">Profile</a>
+                          <a class="abc ac" href="{% url 'logout' %}">Logout</a>
+                          
+          
+                        {% else %}
+                          <a class="abc" href="{% url 'login' %}">Login</a>
+                          <a class="abc" href="{% url 'register' %}">Register</a>
+                          <a class="abc" href="{% url 'home-contact' %}">Contact us</a>        
+                        {% endif %}
+                      </div>                    
+                </div>
+                </nav>
+              </div>
+                   <a  id="head" class="abc" href="{% url 'home-main' %}">VITARAN</a>
+           
+            <div class="clearfix"></div><!--to clear floating items-->
+                       
+        </header>
+        <main role="main" class="container">
+          <div class="row">
+            <div class="col-md-8">
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+              {% block content %}{% endblock %}
+            </div>  
+          </div>
+        </main>
+    
+    <footer ><!--Footer menu-->
+      <div class="ftrmenu">
+            <ul>
+                <li><a class="abc" href="#">Insurance Policy </a></li>
+
+<br>
+                <li><a class="abc" href="post_order">About us</a> </li>
+                <br>
+                <li><a class="abc" href="post_order">FAQs</a> </li>
+                <br>
+
+            </ul>          
+            <address>                
+                <P><a class="abc" href="mailto:xyz@gmail.com">vitaran@gmail.com</a></P>               
+            </address> 
+        </div>     
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
