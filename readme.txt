@@ -1,4 +1,4 @@
-1). Install these packages PIP, Python 3, Django2)
+1). Install these packages PIP, Python 3, Django3
 2). pip install requirements.txt
 3). Clone repository
 4). Pip install requirements.txt in cmd
